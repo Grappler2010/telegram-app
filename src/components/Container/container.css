@@ -1,4 +1,9 @@
 .cardsContainer {
   display: flex;
+  align-items: center;
   gap: 10px;
+  overflow-x: scroll;
+  padding: 10px;
+  background-color: bisque;
+  margin-top: 100px;
 }

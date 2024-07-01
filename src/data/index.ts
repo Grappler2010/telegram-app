@@ -1,1 +1,1 @@
-export * from "./ekaiData";
+export * from "./techJobRolesData";

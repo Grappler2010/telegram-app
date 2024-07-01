@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import './App.css';
 import { useTelegram } from 'hooks';
-import { CardsContainer } from 'components';
+import { Header, CardsContainer } from 'components';
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <CardsContainer />
     </div>
   );
