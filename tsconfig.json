@@ -18,10 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "typeRoots": [
+      "./node_modules/telegram-webapps"
+    ]
   },
   "include": [
-    "src",
-    "src/global.d.ts"
+    "src"
   ]
 }
