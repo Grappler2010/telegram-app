@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import './App.css';
 import { useTelegram } from 'hooks';
-import { Header, CardsContainer } from 'components';
+import { Header, CardsContainer, FlipCardsContainer } from 'components';
+import { Steps, StepsProvider } from 'react-step-builder';
 
 
 function App() {
@@ -13,8 +14,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <CardsContainer />
+      <StepsProvider>
+        <Header />
+        <Steps>
+          <CardsContainer />
+          <FlipCardsContainer />
+        </Steps>
+      </StepsProvider>
     </div>
   );
 }
