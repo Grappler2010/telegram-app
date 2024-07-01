@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import './App.css';
-import { useTelegram } from './hooks';
-import { Card } from './components';
+import { useTelegram } from 'hooks';
+import { CardsContainer } from 'components';
+
 
 function App() {
-  const { tg, onClose } = useTelegram();
+  const { tg } = useTelegram();
 
   useEffect(() => {
     tg.ready();
@@ -12,8 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <Card />
-      <button onClick={onClose}>Закрыть</button>
+      <CardsContainer />
     </div>
   );
 }
